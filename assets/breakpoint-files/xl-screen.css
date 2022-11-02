@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+	.container > header#root-header {
+		justify-content: flex-start;
+	}
+	.container > header#root-header > button {
+		display: inline;
+	}
+	.container > main {
+		display: flex;
+	}
+	.container > footer {
+		display: none;
+	}
+
+	#sidebar {
+		position: relative;
+		top: 0;
+		width: 500px;
+	}
+
+}

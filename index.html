@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/sm-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/md-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/lg-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/xl-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/xxl-screen.css">
+
+	<!-- External scripts -->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4772rvRhPiMHXGIC-1HS_FLTbKoE_wUc&v=weekly&language=nl&region=NL"
+		defer></script>
+
+	<!-- Local scripts -->
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/sidebar.scripts.js"></script>
+	<script src="scripts/maps.scripts.js"></script>
+
+	<title>Coding the Curbs</title>
+</head>
+
+<body>
+	<div class="container">
+		<header id="root-header">
+			<img
+				src="https://static.wixstatic.com/media/21dd0d_050319353c314f00b14e0fc7970173d8~mv2.png/v1/fill/w_163,h_56,al_c,q_95,enc_auto/CTC_Logo_Wit.png"
+				alt="Logo" height="45">
+		</header>
+
+		<main>
+			<!-- Sidebar with list of locations  -->
+			<section id="sidebar">
+				<header>
+					<section>
+						<h2>Smart Zones</h2>
+						<small id="item-count"></small>
+					</section>
+					<section>
+						<small>Klik op een smart zone om meer informatie te zien.</small>
+					</section>
+				</header>
+				<ul id="zone-list"></ul>
+			</section>
+
+			<!-- Google maps API -->
+			<section id="map-container" class="container">
+				<header>
+					<h2>Kaart</h2>
+					<small>Klik op een markerering om meer informatie te zien.</small>
+				</header>
+				<section id="map"></section>
+			</section>
+		</main>
+
+		<footer id="root-footer">
+			<!-- Button to toggle the sidebar -->
+			<button id="sidebar-button" onclick="toggleSidebar()">Lijst weergeven</button>
+		</footer>
+	</div>
+
+</body>
+
+</html>
